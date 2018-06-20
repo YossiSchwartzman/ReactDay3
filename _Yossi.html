@@ -75,7 +75,7 @@
                         {(this.title=="International") && <International />}
                         {this.flag && <ShowFlag flag={this.flag} />}
                         {this.getList().map((element, index) => {
-                            return <div><input type="button" value={element.name} onClick={() => {this.flag = element.flag; this.setState();}} /></div>
+                            return <div><input type="button" value={element.name} onClick={() => {this.title = element.name; this.flag = element.flag; this.setState();}} /></div>
                         })}
                         <p><input type="button" value="international" onClick={this.showInternational} /></p>
                     </div>
